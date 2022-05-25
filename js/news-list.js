@@ -2,7 +2,6 @@ import { apiRequest } from './api.js';
 
 async function createNewsCard() {
    const newsData = await apiRequest();
-   console.log(newsData);
    let html = '';
 
    newsData.forEach((news) => {
