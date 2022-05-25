@@ -1,0 +1,25 @@
+{
+   "name": "vanilla-blog",
+   "version": "1.0.0",
+   "description": "A blog built without frameworks",
+   "main": "app.js",
+   "scripts": {
+      "start": "sass --watch sass/main.scss:css/style.css -w & live-server"
+   },
+   "author": "Gabriel Rodriguez",
+   "license": "MIT",
+   "dependencies": {
+      "live-server": "^1.2.2",
+      "sass": "^1.52.1"
+   },
+   "devDependencies": {
+      "eslint": "^8.16.0",
+      "eslint-config-airbnb": "^19.0.4",
+      "eslint-config-node": "^4.1.0",
+      "eslint-config-prettier": "^8.5.0",
+      "eslint-plugin-import": "^2.26.0",
+      "eslint-plugin-node": "^11.1.0",
+      "eslint-plugin-prettier": "^4.0.0",
+      "prettier": "^2.6.2"
+   }
+}

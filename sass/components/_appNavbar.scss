@@ -1,0 +1,24 @@
+nav {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
+   padding: 15px 15px;
+   h1 {
+      font-size: 1.75rem;
+      font-weight: 400;
+   }
+
+   ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+   }
+
+   li {
+      list-style-type: none;
+      padding-left: .60em;
+      font-size: 15px;
+   }
+}

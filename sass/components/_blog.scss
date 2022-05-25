@@ -1,0 +1,52 @@
+#blogSection {
+   margin: 15px;
+}
+
+.blogListContainer {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.blogCard {
+   box-shadow: 0px 0px 15px #cfd8dc;
+   border-radius: 25px;
+   padding: 10px;
+   margin: 10px 25px;
+   max-width: 250px;
+   display: flex;
+   flex-direction: column;
+
+   .cardTitle {
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-align: left;
+   }
+
+   .cardImg {
+      padding: 0;
+      max-width: 200px;
+
+      img {
+         border: 0;
+      }
+   }
+
+   .cardExcerpt {
+      font-size: 1rem;
+      margin: 10px 0;
+   }
+
+   .cardPublished {
+      font-size: 0.8rem;
+      color: $disabledText-color;
+   }
+}
+
+#blogContent {
+   header {
+      h1 {
+         font-size: $h1-font-size;
+      }
+   }
+}
