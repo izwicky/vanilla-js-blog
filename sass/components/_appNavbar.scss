@@ -4,6 +4,9 @@ nav {
    align-items: center;
    justify-content: space-evenly;
    padding: 15px 15px;
+   background-color: $header-bg-color;
+   color: $partialsText-color;
+
    h1 {
       font-size: 1.75rem;
       font-weight: 400;
@@ -18,7 +21,7 @@ nav {
 
    li {
       list-style-type: none;
-      padding-left: .60em;
+      padding-left: 0.6em;
       font-size: 15px;
    }
 }
