@@ -1,18 +1,29 @@
+let API_URL = '../MOCK_DATA.json';
+
 async function apiRequest() {
-   const request = await fetch('../MOCK_DATA.json');
-
-   if (request.status === 200) {
-      const data = await request.json();
-      return data;
-   }
-
-   if (request.status === 403) {
-      console.error('Forbidden API access');
-   }
-
-   if (request.status === 404) {
-      console.error('API not found');
-   }
+   const apiResult = await fetch(`${API_URL}`)
+      .then((response) => {
+         if (response.ok) {
+            return response.json();
+         } else {
+            return Promise.reject(response);
+         }
+      })
+      .then((data) => {
+         return data;
+      })
+      .catch((error) => {
+         console.log(error);
+      });
+   return apiResult;
 }
 
-export { apiRequest };
+async function fetchAllPosts() {
+   return apiRequest();
+}
+
+async function fetchSinglePost(id) {
+   return apiRequest(id);
+}
+
+export { fetchAllPosts, fetchSinglePost };
