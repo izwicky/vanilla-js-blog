@@ -4,13 +4,6 @@ body {
   margin: 0;
   padding: 0;
 }
-body a:link,
-body a:hover,
-body a:visited,
-body a:active {
-  text-decoration: none;
-  color: #212121;
-}
 
 nav {
   display: flex;
@@ -87,7 +80,7 @@ footer {
   color: #b0bec5;
 }
 
-#pageContent header h1 {
+#blogContent header h1 {
   font-size: 1.5rem;
 }
 
