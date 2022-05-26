@@ -1,7 +1,7 @@
 # A Vanilla JS Blog (WIP)
 
-This project is about me practicing modern web development (CSS/SASS, Javascript and
-HTML). Also to blog about it while building and sharing what I've learned.
+This project is about a simple blog using CSS/SASS, Javascript and HTML. No frameworks.
+Also to blog about it while building and sharing what I've learned.
 
 ## Stack and a brief explanation
 
