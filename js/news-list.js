@@ -1,12 +1,11 @@
-import { fetchAllPosts } from './api.js';
+import { apiRequest } from './api.js';
 
 async function createNewsCard() {
-   const newsData = await fetchAllPosts();
+   const newsData = await apiRequest();
    let html = '';
 
    newsData.forEach((news) => {
-      const htmlCard = `<a href="/blog.html?=${news.id}">
-                        <div class="blogCard" id="${news.id}">
+      const htmlCard = `<div class="blogCard">
                            <div class="cardImg">
                               <img src="https://via.placeholder.com/250" />
                            </div>
@@ -15,8 +14,7 @@ async function createNewsCard() {
                            ${news.excerpt}
                            </div>
                            <div class="cardPublished">${news.published_date}</div>
-                        </div>
-                        </a>`;
+                        </div>`;
 
       html += htmlCard;
    });
