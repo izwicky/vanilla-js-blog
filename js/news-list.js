@@ -20,9 +20,7 @@ async function createNewsCard() {
 
       html += htmlCard;
    });
-
    const blogListContainer = document.querySelector('.blogListContainer');
    blogListContainer.innerHTML = html;
 }
-
 export { createNewsCard };
