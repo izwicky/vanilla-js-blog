@@ -43,10 +43,24 @@
    }
 }
 
-#pageContent {
-   header {
-      h1 {
-         font-size: $h1-font-size;
+.pageContentContainer {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   margin: 25px 0;
+   #pageContent {
+      width: 800px;
+
+      header {
+         h1 {
+            font-size: $h1-font-size;
+         }
+      }
+
+      article {
+         display: flex;
+         flex-wrap: wrap;
       }
    }
 }

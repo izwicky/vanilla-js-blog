@@ -36,6 +36,13 @@ nav li {
   padding-left: 0.6em;
   font-size: 15px;
 }
+nav a:link,
+nav a:hover,
+nav a:visited,
+nav a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
 
 footer {
   background-color: #5cdb95;
@@ -87,8 +94,22 @@ footer {
   color: #b0bec5;
 }
 
-#pageContent header h1 {
+.pageContentContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+}
+.pageContentContainer #pageContent {
+  width: 800px;
+}
+.pageContentContainer #pageContent header h1 {
   font-size: 1.5rem;
+}
+.pageContentContainer #pageContent article {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=style.css.map */
